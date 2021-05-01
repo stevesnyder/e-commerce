@@ -1,5 +1,4 @@
 const { Model, DataTypes } = require('sequelize');
-const { databaseVersion } = require('../../../UCF-VIRT-FSF-FT-03-2021-U-LOL/13-ORM/01-Activities/03-Ins_Models/config/connection');
 
 const sequelize = require('../config/connection');
 
