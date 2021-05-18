@@ -1,5 +1,4 @@
 const { Model, DataTypes } = require('sequelize');
-const { databaseVersion } = require('../../../UCF-VIRT-FSF-FT-03-2021-U-LOL/13-ORM/01-Activities/03-Ins_Models/config/connection.js');
 
 const sequelize = require('../config/connection.js');
 
@@ -10,14 +9,12 @@ Tag.init(
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: 10,
-      validate: {
-        isNumeric: true,
-      },
+      primaryKey: true,
+      autoIncrement: true,      
     },
     tag_name: {
       type: DataTypes.STRING,
-    },
+    }
   },
   {
     sequelize,
